@@ -73,19 +73,63 @@ body {
     color: #ff0040;
 }
 
-/* Lembrar e Esqueci (SENHA) */
+/* Lembrar minha SENHA (SWITCH) */
 
 .remember-forgot {
     display: flex;
     justify-content: space-between;
-    font-size: 12px;
+    align-items: center;
+    font-size: 11px;
     margin: -5px 0 5px;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
-.remember-forgot label input {
-    accent-color: #ff0040;
-    margin-right: 5px;
+.switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
 }
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    width: 100%;
+    height: 18px;
+    background: #acc;
+    border-radius: 20px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+
+    width: 14px;
+    height: 14px;
+
+    left: 2px;
+    top: 2px;
+
+    background: white;
+    border-radius: 50%;
+
+    transition: 0.3s;
+}
+
+.switch input:checked + .slider {
+    background: #ff0055;
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(18px);
+}
+
+/* Esqueci minha SENHA */
 
 .remember-forgot a {
     color: white;
