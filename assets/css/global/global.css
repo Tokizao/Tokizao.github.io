@@ -1,0 +1,63 @@
+@import url('./elements.css');
+@import url('./fonts.css');
+@import url('./variables.css');
+@import url('./normalize.css');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--font-primaria);
+    background-image: url("../../images/global/chill_pixel.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 420 px;
+    padding: 30px 40px;
+    border: 2px solid var(--cor-cinza);
+    border-radius: 10px;
+    color: var(--cor-branco);
+    box-shadow: 0 0 10px var(--cor-cinza);
+    background-color: transparent;
+    backdrop-filter: blur(22px);
+}
+
+.container h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.input-box {
+    width: 100%;
+    height: 50px;
+    margin: 18px 0;
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+    border: 2px solid var(--cor-cinza);
+    border-radius: 40px;
+    color: var(--cor-branco);
+    background-color: transparent;
+    outline: none;
+}
+
+.input-box input::placeholder {
+    color: var(--cor-cinza);
+}
+
+.input-box i {
+    top: 50%;
+    right: 20px;    
+    font-size: 20px;
+    position: absolute;
+    color: var(--cor-primario);
+    transform: translateY(-50%);
+}

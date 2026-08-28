@@ -1,0 +1,7 @@
+:root {
+    --cor-branco: rgba(235, 250, 250, .999);
+    --cor-cinza: rgba(255, 255, 255, .2);
+    --cor-preto: rgba(255, 255, 255, .0);
+    --cor-primario: rgba(255, 0, 64, .999);
+    --cor-primario-brilho: rgba(255, 0, 64, .5);
+}
