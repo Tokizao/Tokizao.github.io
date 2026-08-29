@@ -16,23 +16,23 @@ body {
 
 .container {
     width: 420 px;
-    padding: 30px 40px;
+    padding: 20px 40px;
     border: 2px solid var(--cor-cinza);
-    border-radius: 10px;
+    border-radius: 14px;
     color: var(--cor-branco);
     box-shadow: 0 0 10px var(--cor-cinza);
     background-color: transparent;
-    backdrop-filter: blur(22px);
+    backdrop-filter: blur(18px);
 }
 
 .container h1 {
-    font-size: 36px;
+    font-size: 40px;
     text-align: center;
 }
 
 .input-box {
     width: 100%;
-    height: 50px;
+    height: 52px;
     margin: 18px 0;
     position: relative;
 }
@@ -40,7 +40,7 @@ body {
 .input-box input {
     width: 100%;
     height: 100%;
-    font-size: 16px;
+    font-size: 17px;
     padding: 20px 45px 20px 20px;
     border: 2px solid var(--cor-cinza);
     border-radius: 40px;
@@ -56,7 +56,7 @@ body {
 .input-box i {
     top: 50%;
     right: 20px;    
-    font-size: 20px;
+    font-size: 22px;
     position: absolute;
     color: var(--cor-primario);
     transform: translateY(-50%);
