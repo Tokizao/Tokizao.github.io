@@ -9,13 +9,26 @@ body {
     align-items: center;
     min-height: 100vh;
     font-family: var(--font-primaria);
-    background-image: url("../../images/global/chill_pixel.gif");
+}
+
+.background {
+    inset: 0;
+    z-index: -2;
+    position: fixed;
     background-size: cover;
     background-position: center;
+    background-image: url("../../images/global/chill_devmario.gif");
+}
+
+.background-blur {
+    inset: 0;
+    z-index: -1;
+    position: fixed;
+    backdrop-filter: blur(2px);
 }
 
 .container {
-    width: 420 px;
+    width: 420px;
     padding: 20px 40px;
     border: 2px solid var(--cor-cinza);
     border-radius: 14px;
@@ -28,6 +41,59 @@ body {
 .container h1 {
     font-size: 40px;
     text-align: center;
+}
+
+.icons {
+    font-size: 20px;
+    height: 32px;
+    margin: 0;
+    position: relative;
+}
+
+.git-hub {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.git-hub a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons i {
+    color: var(--cor-branco);
+    transform: scale(1.3);
+    transition: 0.70s ease;
+}
+
+.icons i:hover {
+    font-size: 26px;
+    background: linear-gradient(
+        90deg,
+            var(--cor-primario),
+            var(--cor-secundario),
+            var(--cor-primario)
+    );
+
+    background-size: 200% 100%;
+    background-position: 0% 50%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 2s linear infinite;
+}
+
+@keyframes anima {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 200% 50%;
+    }
 }
 
 .input-box {

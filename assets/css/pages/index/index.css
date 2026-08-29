@@ -28,7 +28,7 @@
     color: var(--cor-primario);
     background: currentColor;
     position: absolute;
-    transition: width 0.3s ease;
+    transition: width 0.4s ease;
 }
 
 .forgot-text:hover:after {
@@ -49,27 +49,33 @@
 }
 
 .login:hover {
-    font-size: 17px;
+    font-size: 17px; 
     background-color: var(--cor-primario);
     box-shadow: 0 8px 25px var(--cor-primario-brilho);
     transform: translateY(-3px) scale(1.02);
 }
 
 .register-link {
+    
     text-align: center;
     font-size: 14px;
     margin: 20px 0 15px;
 }
 
-.register-text {
-    text-decoration: none;
-    position: relative;
-}
-
 .register-link a {
+    display: inline-block;
     color: var(--cor-branco);
     font-weight: 600;
     transition: 0.70s ease;
+}
+
+.register-link a:hover {
+    font-size: 16px;
+}
+
+.register-text {
+    text-decoration: none;
+    position: relative;
 }
 
 .register-text {
@@ -92,7 +98,8 @@
     from {
         background-position: 0% 50%;
     }
-    to{
+
+    to {
         background-position: 200% 50%;
     }
 }
@@ -106,7 +113,7 @@
     color: var(--cor-primario);
     background: currentColor;
     position: absolute;
-    transition: width 0.3s ease;
+    transition: width 0.4s ease;
 }
 
 .register-text:hover::after {
