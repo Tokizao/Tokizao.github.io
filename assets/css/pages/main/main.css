@@ -6,17 +6,15 @@
     position: fixed;
     background-size: cover;
     background-position: center;
-    background-image: url(../../../images/global/chill_cats.gif);
+    background-image: url('../../../images/global/chill_cats.gif');
 }
 
 .fixed-background-blur {
     inset: 0;
     z-index: -1;
     position: fixed;
-}
-
-header {
-
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .fixed-top {
@@ -25,26 +23,27 @@ header {
     left: 0;
     right: 0;
     z-index: 99;
-    background: rgba(255, 255, 255, 0.20);
     border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
 }
 
 .fixed-items {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 22px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    margin: 0 32px;
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
 
-.fixed-items i {
-    font-size: 22px;
+.account {
+    font-size: 30px;
     color: var(--cor-primario);
 }
 
 .logo {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
     color: var(--cor-branco);
 }
@@ -54,7 +53,25 @@ header {
     color: var(--cor-primario);
 }
 
+.fixed-items a {
+    transition: 0.70s ease;
+}
+
+.fixed-items a:hover {
+    transform: scale(1.08);
+}
+
 .navbar a {
     font-weight: 500;
     color: var(--cor-branco);
+}
+
+#header_icons {
+    font-size: 12px;
+    color: var(--cor-primario);
+    transition: 0.70s ease;
+}
+
+#header_icons:hover {
+    font-size: 18px;
 }
