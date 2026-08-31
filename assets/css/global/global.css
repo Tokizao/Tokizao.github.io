@@ -43,6 +43,10 @@ body {
     text-align: center;
 }
 
+.container h1 span {
+    color: var(--cor-primario);
+}
+
 .icons {
     font-size: 20px;
     height: 32px;

@@ -1,0 +1,19 @@
+@import url('../../global/global.css');
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: #0000;
+    border-bottom: var(--cor-cinza);
+}
+
+.fixed-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 22px;
+}
