@@ -4,13 +4,12 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    margin: -5px 0 5px 5px;
     font-size: 12px;
+    margin: -5px 0 5px 5px;
 }
 
 .forgot-text {
     color: var(--cor-cinza);
-    text-decoration: none;
     position: relative;
     transition: 0.70s ease;
 }
@@ -56,7 +55,6 @@
 }
 
 .register-link {
-    
     text-align: center;
     font-size: 14px;
     margin: 20px 0 15px;
@@ -74,7 +72,6 @@
 }
 
 .register-text {
-    text-decoration: none;
     position: relative;
 }
 
@@ -91,10 +88,10 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: anima 2s linear infinite;
+    animation: glow 2s linear infinite;
 }
 
-@keyframes anima {
+@keyframes glow {
     from {
         background-position: 0% 50%;
     }

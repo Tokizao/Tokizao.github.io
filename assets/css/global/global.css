@@ -4,10 +4,10 @@
 @import url('./normalize.css');
 
 body {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     font-family: var(--font-primaria);
 }
 
@@ -30,9 +30,9 @@ body {
 .container {
     width: 420px;
     padding: 20px 40px;
+    color: var(--cor-branco);
     border: 2px solid var(--cor-cinza);
     border-radius: 14px;
-    color: var(--cor-branco);
     box-shadow: 0 0 10px var(--cor-cinza);
     background-color: transparent;
     backdrop-filter: blur(18px);
@@ -85,12 +85,12 @@ body {
     background-size: 200% 100%;
     background-position: 0% 50%;
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: anima 2s linear infinite;
+    background-clip: text;
+    animation: glow 2s linear infinite;
 }
 
-@keyframes anima {
+@keyframes glow {
     from {
         background-position: 0% 50%;
     }
@@ -112,11 +112,10 @@ body {
     height: 100%;
     font-size: 17px;
     padding: 20px 45px 20px 20px;
+    color: var(--cor-branco);
     border: 2px solid var(--cor-cinza);
     border-radius: 40px;
-    color: var(--cor-branco);
     background-color: transparent;
-    outline: none;
 }
 
 .input-box input::placeholder {
@@ -127,7 +126,7 @@ body {
     top: 50%;
     right: 20px;    
     font-size: 22px;
-    position: absolute;
     color: var(--cor-primario);
+    position: absolute;
     transform: translateY(-50%);
 }

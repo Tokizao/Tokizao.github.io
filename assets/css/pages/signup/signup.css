@@ -8,19 +8,6 @@
     border: none;
     border-radius: 40px;
     cursor: pointer;
-    background-color: var(--cor-primario);
-    box-shadow: 0 0 10x var(--cor-cinza);
-    transition: 0.70s ease;
-}
-
-.signin {
-    width: 100%;
-    height: 50px;
-    font-size: 16px;
-    margin-top: 16px;
-    border: none;
-    border-radius: 40px;
-    cursor: pointer;
     background-color: var(--cor-branco);
     box-shadow: 0 0 10x var(--cor-cinza);
     transition: 0.70s ease;
@@ -34,8 +21,8 @@
 }
 
 .signin-link {
-    text-align: center;
     font-size: 14px;
+    text-align: center;
     margin: 20px 0 15px;
 }
 
@@ -49,7 +36,6 @@
 
 .signin-text {
     font-weight: 600;
-    text-decoration: none;
     position: relative;
 }
 
@@ -63,8 +49,8 @@
     background-size: 200% 100%;
     background-position: 0% 50%;
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     animation: effect 2s linear infinite;
 }
 

@@ -27,7 +27,7 @@ body {
     left: 0;
     right: 0;
     z-index: 99;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 2px solid var(--cor-cinza);
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(8px);
 }
@@ -42,19 +42,19 @@ body {
 }
 
 .account {
-    font-size: 30px;
     color: var(--cor-primario);
+    font-size: 30px;
 }
 
 .logo {
+    color: var(--cor-branco);
     font-size: 30px;
     font-weight: 600;
-    color: var(--cor-branco);
 }
 
 .logo span {
-    font-weight: 800;
     color: var(--cor-primario);
+    font-weight: 800;
 }
 
 .fixed-items a {
@@ -66,18 +66,24 @@ body {
 }
 
 .navbar a {
-    font-weight: 500;
     color: var(--cor-branco);
+    padding: 0 8px;
 }
 
 #header_icons {
-    font-size: 12px;
     color: var(--cor-primario);
+    font-size: 14px;
     transition: 0.70s ease;
 }
 
+#header_icons span {
+    color: var(--cor-branco);
+    padding: 0 3px;
+    font-weight: 400;
+}
+
 #header_icons:hover {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .account {
@@ -90,12 +96,12 @@ body {
     background-size: 200% 100%;
     background-position: 0% 50%;
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: effect 2s linear infinite;
+    background-clip: text;
+    animation: glow 2s linear infinite;
 }
 
-@keyframes effect {
+@keyframes glow {
     from {
         background-position: 0% 50%;
     }
@@ -108,11 +114,10 @@ body {
 .first-section {
     z-index: 1;
     min-height: 100vh;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    position: relative;
     padding: 80px 10%;
 }
 
@@ -124,7 +129,7 @@ body {
 
 .content h1 {
     color: var(--cor-branco);
-    font-size: 52px;
+    font-size: 60px;
     font-weight: 800;
     text-align: center;
 }
@@ -139,15 +144,15 @@ body {
     background-size: 200% 100%;
     background-position: 0% 50%;
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: effect 2s linear infinite;
+    background-clip: text;
+    animation: glow 2s linear infinite;
 }
 
 .second-section {
     z-index: 2;
-    display: flex;
     min-height: 100vh;
+    display: flex;
     align-items: center;
     justify-content: center;
     background: rgb(0, 0, 0);
@@ -155,10 +160,10 @@ body {
 
 .third-section {
     z-index: 2;
-    display: flex;
     min-height: 100vh;
-    position: relative;
+    display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     background: rgb(255, 0, 0);
 }
