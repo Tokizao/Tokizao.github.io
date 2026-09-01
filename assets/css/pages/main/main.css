@@ -1,9 +1,13 @@
 @import url('../../global/global.css');
 
+body {
+    scroll-snap-type: y mandatory;
+}
+
 .fixed-background {
     inset: 0;
     z-index: -2;
-    position: fixed;
+    position: absolute;
     background-size: cover;
     background-position: center;
     background-image: url('../../../images/global/chill_cats.gif');
@@ -12,7 +16,7 @@
 .fixed-background-blur {
     inset: 0;
     z-index: -1;
-    position: fixed;
+    position: absolute;
     backdrop-filter: blur(2px);
     background-color: rgba(0, 0, 0, 0.4);
 }
@@ -74,4 +78,87 @@
 
 #header_icons:hover {
     font-size: 18px;
+}
+
+.account {
+    background: linear-gradient(
+        90deg,
+            var(--cor-primario),
+            var(--cor-secundario),
+            var(--cor-primario));
+
+    background-size: 200% 100%;
+    background-position: 0% 50%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: effect 2s linear infinite;
+}
+
+@keyframes effect {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 200% 50%;
+    }
+}
+
+.first-section {
+    z-index: 1;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 80px 10%;
+}
+
+.content {
+    color: var(--cor-branco);
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+.content h1 {
+    color: var(--cor-branco);
+    font-size: 52px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.content span {
+    background: linear-gradient(
+        90deg,
+            var(--cor-primario),
+            var(--cor-secundario),
+            var(--cor-primario));
+
+    background-size: 200% 100%;
+    background-position: 0% 50%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: effect 2s linear infinite;
+}
+
+.second-section {
+    z-index: 2;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 0, 0);
+}
+
+.third-section {
+    z-index: 2;
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 0, 0);
 }

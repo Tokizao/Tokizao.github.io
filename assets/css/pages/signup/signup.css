@@ -65,10 +65,10 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: anima 2s linear infinite;
+    animation: effect 2s linear infinite;
 }
 
-@keyframes anima {
+@keyframes effect {
     from {
         background-position: 0% 50%;
     }
