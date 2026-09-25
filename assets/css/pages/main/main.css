@@ -223,18 +223,33 @@ h3 {
 
 #card1 {
     animation-delay: calc(30s / 5 * (5 - 1) * -1);
+    background-image: url('../../../images/global/internet_surfing.gif');
+    
 }
 #card2 {
     animation-delay: calc(30s / 5 * (5 - 2) * -1);
+    background-image: url('../../../images/global/meme.gif');
+    background-position: center;
+    background-size: 100% 180%;
+
 }
 #card3 {
     animation-delay: calc(30s / 5 * (5 - 3) * -1);
+    background-image: url('../../../images/global/bass_color.gif');
+    background-position: center;
+    background-size: 135% 150%;
 }
 #card4 {
     animation-delay: calc(30s / 5 * (5 - 4) * -1);
+    background-image: url('../../../images/global/internet_surfing.gif');
+    background-position: center;
+    background-size: 100% 100%;
 }
 #card5 {
     animation-delay: calc(30s / 5 * (5 - 5) * -1);
+    background-image: url('../../../images/global/1155_dancing.gif');
+    background-position: center;
+    background-size: 100% 100%;
 }
 
 .third-section {
