@@ -2,6 +2,11 @@
 
 body {
     scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+}
+
+main {
+    min-width: 100vw;
 }
 
 .fixed-background {
@@ -117,18 +122,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    padding: 80px 10%;
+    position: relative; 
 }
 
 .content {
     color: var(--cor-branco);
-    max-width: 100vw;
     margin: 0 auto;
 }
 
 h1 {
     color: var(--cor-branco);
+    z-index: 0;
     font-size: 60px;
     font-weight: 800;
     text-align: center;
@@ -143,6 +147,9 @@ h3 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-shadow: 
+    0px 1px 0 #000,
+    0px 2px 0 #000;
 }
 
 .content span {
@@ -212,7 +219,7 @@ h3 {
     width: 200px;
     height: 100px;
     background-color: red;
-    border-radius: 6px;
+    border-radius: 8px;
     left: max(calc(200px * 8), 100%);
     position: absolute;
     animation-name: scrollEffect;
@@ -254,10 +261,34 @@ h3 {
 
 .third-section {
     z-index: 2;
-    min-height: 100vh;
+    min-height: 40vh;
+    max-width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    background: rgb(255, 0, 0);
+    background: rgb(28, 28, 28);
+}
+
+.third-section h1 {
+    text-transform: uppercase;
+    margin-top: -12px;
+    margin-bottom: 32px;
+    color: var(--cor-primario);
+    text-shadow:
+    0px 1px 0 #000,
+    0px 2px 0 #000;
+}
+
+.third-section p {
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+span a {
+    transition: 0.5s ease-in-out;
+}
+
+span a:hover {
+    font-size: 17px;
 }
